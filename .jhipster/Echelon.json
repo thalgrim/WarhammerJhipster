@@ -1,0 +1,96 @@
+{
+    "name": "Echelon",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "niveau",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cc",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "ct",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "fo",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "en",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "ini",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "ag",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dex",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "inte",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "fm",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "soc",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "statut",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "competence",
+            "otherEntityRelationshipName": "echelon",
+            "relationshipName": "competence"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "talent",
+            "otherEntityRelationshipName": "echelon",
+            "relationshipName": "talent"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "possession",
+            "otherEntityRelationshipName": "echelon",
+            "relationshipName": "possession"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "carriere",
+            "otherEntityRelationshipName": "echelon",
+            "relationshipName": "carriere",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200425110800",
+    "entityTableName": "echelon",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}

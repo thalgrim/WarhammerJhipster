@@ -1,0 +1,104 @@
+entity Possession {
+	nom String
+}
+
+entity Talent {
+	nom String,
+	maxi Integer,
+	test String,
+	description String
+}
+
+entity Competence {
+	nom String,
+    caracteristique String,
+    deBase Boolean,
+    groupee Boolean
+}
+
+
+entity Echelon {
+	nom String,
+    niveau Integer,
+	cc Boolean,
+    ct Boolean,
+	fo Boolean,
+    en Boolean,
+    ini Boolean,
+    ag Boolean,
+    dex Boolean,
+    inte Boolean,
+    fm Boolean,
+    soc Boolean,
+    statut String}
+entity Carriere {
+	nom String
+}
+
+entity Classe {
+	nom String
+}
+
+entity Race {
+	cc Integer,
+    ct Integer,
+	fo Integer,
+    en Integer,
+    ini Integer,
+    ag Integer,
+    dex Integer,
+    inte Integer,
+    fm Integer,
+    soc Integer,
+    destin Integer,
+    resilience Integer,
+    experience Integer,
+    mouvement Integer,
+    pointsSuplementaires Integer,
+    blessures Integer,
+    nom String
+}
+
+entity Personnage {
+nom String
+}
+
+entity Utilisateur {
+nom String
+}
+
+relationship OneToMany {
+	Utilisateur to Personnage
+}
+
+relationship OneToOne {
+	Personnage to Race
+}
+
+relationship OneToOne {
+	Personnage to Carriere
+}
+
+relationship OneToOne {
+	Carriere to Echelon
+}
+
+relationship OneToMany {
+	Echelon to Competence
+}
+
+relationship OneToMany {
+	Echelon to Talent
+}
+
+relationship OneToMany {
+	Echelon to Possession
+}
+
+relationship OneToOne {
+	Carriere to Classe
+}
+
+relationship OneToMany {
+	Classe to Possession
+}

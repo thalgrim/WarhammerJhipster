@@ -1,0 +1,36 @@
+{
+    "name": "Classe",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "possession",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "possession"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "carriere",
+            "otherEntityRelationshipName": "classe",
+            "relationshipName": "carriere",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200425111000",
+    "entityTableName": "classe",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}

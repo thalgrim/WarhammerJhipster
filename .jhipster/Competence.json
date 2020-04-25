@@ -1,0 +1,42 @@
+{
+    "name": "Competence",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "caracteristique",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "deBase",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "groupee",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "echelon",
+            "otherEntityRelationshipName": "competence",
+            "relationshipName": "echelon",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200425110700",
+    "entityTableName": "competence",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}
