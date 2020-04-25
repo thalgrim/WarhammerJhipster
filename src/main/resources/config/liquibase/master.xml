@@ -14,6 +14,20 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110500_added_entity_Possession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110600_added_entity_Talent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110700_added_entity_Competence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110800_added_entity_Echelon.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110900_added_entity_Carriere.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425111000_added_entity_Classe.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425111100_added_entity_Race.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425111200_added_entity_Personnage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425111300_added_entity_Utilisateur.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20200425110500_added_entity_constraints_Possession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110600_added_entity_constraints_Talent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110700_added_entity_constraints_Competence.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425110900_added_entity_constraints_Carriere.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20200425111200_added_entity_constraints_Personnage.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,37 @@
+{
+    "name": "Possession",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "echelon",
+            "otherEntityRelationshipName": "possession",
+            "relationshipName": "echelon",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "classe",
+            "otherEntityRelationshipName": "possession",
+            "relationshipName": "classe",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200425110500",
+    "entityTableName": "possession",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}

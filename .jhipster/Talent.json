@@ -1,0 +1,42 @@
+{
+    "name": "Talent",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "maxi",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "test",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "echelon",
+            "otherEntityRelationshipName": "talent",
+            "relationshipName": "echelon",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200425110600",
+    "entityTableName": "talent",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}

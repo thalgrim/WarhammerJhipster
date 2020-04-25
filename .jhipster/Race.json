@@ -1,0 +1,94 @@
+{
+    "name": "Race",
+    "fields": [
+        {
+            "fieldName": "cc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ct",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fo",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "en",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ini",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ag",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dex",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "inte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fm",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "soc",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "destin",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "resilience",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "experience",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "mouvement",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "pointsSuplementaires",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "blessures",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "personnage",
+            "otherEntityRelationshipName": "race",
+            "relationshipName": "personnage",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200425111100",
+    "entityTableName": "race",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}

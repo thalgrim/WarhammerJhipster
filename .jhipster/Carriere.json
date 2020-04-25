@@ -1,0 +1,46 @@
+{
+    "name": "Carriere",
+    "fields": [
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "echelon",
+            "otherEntityRelationshipName": "carriere",
+            "relationshipName": "echelon",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "classe",
+            "otherEntityRelationshipName": "carriere",
+            "relationshipName": "classe",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "personnage",
+            "otherEntityRelationshipName": "carriere",
+            "relationshipName": "personnage",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20200425110900",
+    "entityTableName": "carriere",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "WarhammerJhipster",
+    "applications": "*",
+    "microserviceName": "WarhammerJhipster"
+}
